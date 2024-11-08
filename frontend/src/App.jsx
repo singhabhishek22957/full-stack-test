@@ -1,6 +1,42 @@
 import { useEffect, useState } from 'react'
 import axios from 'axios'
 
+const styles = {
+  container: {
+    fontFamily: 'Arial, sans-serif',
+    textAlign: 'center',
+  },
+  header: {
+    backgroundColor: '#333',
+    color: '#fff',
+    padding: '1rem',
+  },
+  navbar: {
+    display: 'flex',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    padding: '0 2rem',
+  },
+  navLinks: {
+    listStyleType: 'none',
+    display: 'flex',
+    gap: '1rem',
+    margin: 0,
+    padding: 0,
+  },
+  main: {
+    padding: '2rem',
+  },
+  footer: {
+    backgroundColor: '#333',
+    color: '#fff',
+    padding: '1rem',
+    marginTop: '2rem',
+  },
+};
+  
+
+
 function Navbar() {
   return (
     <header style={styles.header}>
@@ -63,40 +99,7 @@ function App() {
 
 
   // Inline styles for simplicity
-const styles = {
-  container: {
-    fontFamily: 'Arial, sans-serif',
-    textAlign: 'center',
-  },
-  header: {
-    backgroundColor: '#333',
-    color: '#fff',
-    padding: '1rem',
-  },
-  navbar: {
-    display: 'flex',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-    padding: '0 2rem',
-  },
-  navLinks: {
-    listStyleType: 'none',
-    display: 'flex',
-    gap: '1rem',
-    margin: 0,
-    padding: 0,
-  },
-  main: {
-    padding: '2rem',
-  },
-  footer: {
-    backgroundColor: '#333',
-    color: '#fff',
-    padding: '1rem',
-    marginTop: '2rem',
-  },
-};
-  
+
 
  return(
   <>
