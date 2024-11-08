@@ -7,7 +7,7 @@ import cors from 'cors'
 const app = express()
 
 const corsOptions={
-  origin:"https://abhishek-web.vercel.app/",
+  origin:"https://full-stack-test-sage.vercel.app",
   optionsSuccessStatus:200,
 };
 app.use(cors(corsOptions))
