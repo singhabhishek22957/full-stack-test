@@ -16,7 +16,7 @@ function App() {
   // }, )
 
   useEffect(() => {
-    axios.get('/api/jokes')
+    axios.get('https://abhishek-website-i74a.onrender.com/api/jokes')
       .then((response) => {
         console.log(response.data); // Check the structure of response.data
         setJokes(Array.isArray(response.data) ? response.data : [{id:456,title:"Abhishek title ",content:"this is content"}]);
