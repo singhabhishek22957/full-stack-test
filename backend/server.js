@@ -1,7 +1,16 @@
 import express from 'express'
+import cors from 'cors'
+
+
 
 
 const app = express()
+
+const corsOptions={
+  origin:"https://abhishek-web.vercel.app/",
+  optionsSuccessStatus:200,
+};
+app.use(cors(corsOptions))
 
 app.get('/',(req,res)=>{
   res.send("This is Abhishek ")
